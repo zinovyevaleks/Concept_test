@@ -72,6 +72,20 @@
       letter-spacing: 0.75px;
       border-bottom: 2px solid #ffffff; }
 
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1; }
+
+.carousel-control-prev-icon {
+  background-image: url(img/prev.png);
+  width: 34px;
+  height: 61px; }
+
+.carousel-control-next-icon {
+  background-image: url(img/next.png);
+  width: 34px;
+  height: 61px; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   color: #767676;
