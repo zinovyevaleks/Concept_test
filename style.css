@@ -1,5 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&subset=cyrillic");
-@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans&subset=cyrillic-ext");
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf") format("ttf"); }
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9,52 +11,59 @@
           align-items: center;
   min-height: 230px;
   background-color: #dcdcdc; }
-  .header .logo {
-    cursor: pointer;
-    width: 273px;
-    height: 100px; }
-  .header .phones {
+  .header .row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end; }
-    .header .phones p {
-      font-family: 'PT Sans', sans-serif;
-      font-size: 40px;
-      font-weight: 400;
-      line-height: 46px;
-      letter-spacing: 1px;
-      cursor: pointer; }
-    .header .phones .feedback {
-      width: 171px;
-      height: 22px;
-      color: #767676;
-      font-family: "PT Sans";
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 0px;
-      letter-spacing: 0.6px;
-      border-bottom: 1px dashed;
-      background-color: #dcdcdc;
-      padding: 0; }
-      .header .phones .feedback:focus {
-        -webkit-box-shadow: none;
-                box-shadow: none; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .header .row .logo {
+      cursor: pointer;
+      width: 273px;
+      height: 100px; }
+    .header .row .phones {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end; }
+      .header .row .phones p {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 46px;
+        letter-spacing: 1px;
+        cursor: pointer; }
+      .header .row .phones .feedback {
+        width: 171px;
+        height: 22px;
+        color: #767676;
+        font-family: "PT Sans";
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 0;
+        letter-spacing: 0.6px;
+        border-bottom: 1px dashed;
+        background-color: #dcdcdc;
+        padding: 0; }
+        .header .row .phones .feedback:focus {
+          -webkit-box-shadow: none;
+                  box-shadow: none; }
 
 .navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0; }
 
 .navbar {
-  height: 80px;
+  min-height: 80px;
   background-color: #777777; }
-  .navbar .navbar-nav {
+  .navbar-nav {
     margin: 0 auto;
     font-family: "PT Sans";
     color: #ffffff;
@@ -71,6 +80,17 @@
     .navbar .nav-link:active, .navbar .nav-link:hover {
       letter-spacing: 0.75px;
       border-bottom: 2px solid #ffffff; }
+  .navbar-toggler:focus {
+    outline: none; }
+  .navbar-toggler-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 32px;
+    color: #ffffff; }
 
 .carousel-control-next,
 .carousel-control-prev {
@@ -102,6 +122,54 @@
     border-bottom: 1px solid;
     text-decoration: none; }
 
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: .4rem; }
+
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: .4rem;
+  color: #6c757d;
+  content: "/"; }
+
+.catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .catalog .leftblock {
+    height: 254px;
+    width: 178px;
+    background-color: red; }
+  .catalog .centerblock {
+    width: 780px; }
+    .catalog .centerblock .card {
+      width: 250px;
+      height: 380px;
+      padding: 20px;
+      background-color: #dcdcdc;
+      border-radius: 0;
+      margin-bottom: 20px; }
+      .catalog .centerblock .card-price {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .catalog .centerblock .card-price img {
+          width: 28px;
+          height: 21px; }
+        .catalog .centerblock .card-price h5 {
+          color: #444444; }
+
+.pagination {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 12px; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   color: #767676;
@@ -112,6 +180,7 @@ body {
 
 .container {
   width: 1000px;
+  margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px; }
 

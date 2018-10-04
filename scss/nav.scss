@@ -4,10 +4,10 @@
 }
 
 .navbar {
-    height: 80px;
+    min-height: 80px;
     background-color: #777777;
 
-    .navbar-nav {
+    &-nav {
         margin: 0 auto;
         font-family: "PT Sans";
         color: #ffffff;
@@ -38,4 +38,15 @@
             border-bottom: 2px solid #ffffff;
         }
     }
+
+    &-toggler:focus {
+        outline: none;
+    }
+
+     &-toggler-icon {
+     display: flex;
+    align-items: center;
+    font-size: 32px;
+        color: #ffffff;
+     }
 }

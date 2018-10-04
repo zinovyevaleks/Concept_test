@@ -1,11 +1,16 @@
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=cyrillic');
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&subset=cyrillic-ext');
+@font-face {
+ font-family: "Open Sans";
+ src: url("../fonts/OpenSans-Regular.ttf") format("ttf"),
+}
 
 @import "header.scss";
 @import "nav.scss";
 @import "carousel.scss";
 @import "breadcrumb.scss";
+@import "catalog.scss";
+@import "pagination.scss";
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -21,7 +26,7 @@ body {
     // justify-content: space-between;
     // align-items: center;
     width: 1000px;
-    // margin: 0 auto;
+    margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
 }

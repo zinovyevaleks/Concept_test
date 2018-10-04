@@ -4,41 +4,46 @@
     min-height: 230px;
     background-color: #dcdcdc;
 
-    .logo {
-        cursor: pointer;
-        width: 273px;
-height: 100px;
-    }
-
-    .phones {
+    .row {
         display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+        justify-content: space-between;
 
-        p {
-            font-family: 'PT Sans', sans-serif;
-            font-size: 40px;
-            font-weight: 400;
-            line-height: 46px;
-            letter-spacing: 1px;
+        .logo {
             cursor: pointer;
+            width: 273px;
+            height: 100px;
         }
 
-        .feedback {
-            width: 171px;
-            height: 22px;
-            color: #767676;
-            font-family: "PT Sans";
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 0px;
-            letter-spacing: 0.6px;
-            border-bottom: 1px dashed;
-            background-color: #dcdcdc;
-            padding: 0;
+        .phones {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
 
-            &:focus {
-                box-shadow: none;
+            p {
+                font-family: 'PT Sans', sans-serif;
+                font-size: 40px;
+                font-weight: 400;
+                line-height: 46px;
+                letter-spacing: 1px;
+                cursor: pointer;
+            }
+
+            .feedback {
+                width: 171px;
+                height: 22px;
+                color: #767676;
+                font-family: "PT Sans";
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 0;
+                letter-spacing: 0.6px;
+                border-bottom: 1px dashed;
+                background-color: #dcdcdc;
+                padding: 0;
+
+                &:focus {
+                    box-shadow: none;
+                }
             }
         }
     }
