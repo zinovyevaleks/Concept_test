@@ -9,6 +9,10 @@
           align-items: center;
   min-height: 230px;
   background-color: #dcdcdc; }
+  .header .logo {
+    cursor: pointer;
+    width: 273px;
+    height: 100px; }
   .header .phones {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -25,7 +29,8 @@
       font-size: 40px;
       font-weight: 400;
       line-height: 46px;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      cursor: pointer; }
     .header .phones .feedback {
       width: 171px;
       height: 22px;
@@ -38,6 +43,34 @@
       border-bottom: 1px dashed;
       background-color: #dcdcdc;
       padding: 0; }
+      .header .phones .feedback:focus {
+        -webkit-box-shadow: none;
+                box-shadow: none; }
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0; }
+
+.navbar {
+  height: 80px;
+  background-color: #777777; }
+  .navbar .navbar-nav {
+    margin: 0 auto;
+    font-family: "PT Sans";
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.75px; }
+  .navbar .nav-item {
+    padding-right: 1.2rem;
+    padding-left: 1.2rem; }
+  .navbar .nav-link {
+    padding-bottom: 3px;
+    color: #ffffff;
+    border-bottom: 2px solid #777777; }
+    .navbar .nav-link:active, .navbar .nav-link:hover {
+      letter-spacing: 0.75px;
+      border-bottom: 2px solid #ffffff; }
 
 body {
   font-family: 'Open Sans', sans-serif;

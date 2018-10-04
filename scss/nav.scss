@@ -1,0 +1,41 @@
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar {
+    height: 80px;
+    background-color: #777777;
+
+    .navbar-nav {
+        margin: 0 auto;
+        font-family: "PT Sans";
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 0.75px;
+    }
+
+    .nav-item {
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+
+    .link-separator {
+
+    }
+
+
+    .nav-link {
+        padding-bottom: 3px;
+        color: #ffffff;
+        border-bottom: 2px solid #777777;
+
+
+        &:active,
+        &:hover {
+            letter-spacing: 0.75px;
+            border-bottom: 2px solid #ffffff;
+        }
+    }
+}
