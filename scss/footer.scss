@@ -1,3 +1,44 @@
 .footer {
-    
+    height: 220px;
+    margin-top: 200px;
+    padding-top: 50px;
+    color: #ffffff;
+    background-color:#777777;
+
+    a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+
+    .copy {
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .nav  {
+        .nav-list {
+            list-style-type: none;
+
+            li {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .logo  {
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+            width: 36px;
+height: 38px;
+        margin-right: 9px;
+        }
+
+        span {
+            text-decoration: underline;
+        }
+    }
 }
