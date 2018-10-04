@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&subset=cyrillic');
+
+body {
+    font-family: PTSans;
+    color: #767676;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+}
+
+.container {
+    width: 1000px;
+    padding-left: 10;
+    padding-right: 10px;
+}
