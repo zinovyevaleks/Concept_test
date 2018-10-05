@@ -23,11 +23,50 @@
                 <div class="phones col-lg-6 col-12">
                     <p>+7(499) 777-77-77</p>
                     <p>+7(499) 777-77-77</p>
-                    <button type="button" class="btn feedback">Обратная связь</button>
+                    <button type="button" class="btn feedback" data-toggle="modal" data-target="#exampleModal">Обратная связь</button>
                 </div>
             </div>
         </div>
     </header>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                    <img src="./img/2-layers.jpg" alt="Закрыть">
+                </span>
+            </button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Обратная связь</h5>
+
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="validationCustom01">Ваше имя<sup>&#x2a</sup></label>
+                        <input type="text" class="form-control" id="validationCustom01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Телефон<sup>&#x2a</sup></label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email<sup>&#x2a</sup></label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Сообщение</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
     <!-- menu -->
     <nav class="navbar navbar-expand-lg">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
