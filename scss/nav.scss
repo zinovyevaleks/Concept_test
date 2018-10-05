@@ -21,16 +21,11 @@
         padding-left: 1.2rem;
     }
 
-    .link-separator {
-
-    }
-
 
     .nav-link {
         padding-bottom: 3px;
         color: #ffffff;
         border-bottom: 2px solid #777777;
-
 
         &:active,
         &:hover {
@@ -43,10 +38,10 @@
         outline: none;
     }
 
-     &-toggler-icon {
-     display: flex;
-    align-items: center;
-    font-size: 32px;
+    &-toggler-icon {
+        display: flex;
+        align-items: center;
+        font-size: 32px;
         color: #ffffff;
-     }
+    }
 }

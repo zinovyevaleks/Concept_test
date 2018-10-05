@@ -3,13 +3,12 @@
     margin-top: 200px;
     padding-top: 50px;
     color: #ffffff;
-    background-color:#777777;
+    background-color: #777777;
 
     a {
         color: #ffffff;
         text-decoration: none;
     }
-
 
     .copy {
         p {
@@ -17,7 +16,7 @@
         }
     }
 
-    .nav  {
+    .nav {
         .nav-list {
             list-style-type: none;
 
@@ -27,14 +26,14 @@
         }
     }
 
-    .logo  {
+    .logo {
         display: flex;
         justify-content: flex-end;
 
         img {
             width: 36px;
-height: 38px;
-        margin-right: 9px;
+            height: 38px;
+            margin-right: 9px;
         }
 
         span {
